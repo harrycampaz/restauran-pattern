@@ -4,6 +4,7 @@ import com.dezzapps.restaurante.factory.AbstractFactory;
 import com.dezzapps.restaurante.models.Frances;
 import com.dezzapps.restaurante.models.Tajado;
 import com.dezzapps.restaurante.models.interfaces.Bread;
+import com.dezzapps.restaurante.models.interfaces.Drink;
 import com.dezzapps.restaurante.models.interfaces.Relleno;
 
 
@@ -26,6 +27,11 @@ public class BreadFactory extends AbstractFactory {
 
     @Override
     public Relleno getRelleno(String rellenoType) {
+        return null;
+    }
+
+    @Override
+    public Drink getDrink(String drinkType) {
         return null;
     }
 }
