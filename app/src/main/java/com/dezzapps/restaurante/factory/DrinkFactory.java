@@ -1,5 +1,6 @@
 package com.dezzapps.restaurante.factory;
 
+import com.dezzapps.restaurante.models.Beer;
 import com.dezzapps.restaurante.models.Coke;
 import com.dezzapps.restaurante.models.interfaces.Bread;
 import com.dezzapps.restaurante.models.interfaces.Drink;
@@ -24,6 +25,8 @@ public class DrinkFactory extends AbstractFactory {
 
         if(drinkType.equals("COK")){
             return  new Coke();
+        }else if(drinkType.equals("BEE")){
+            return new Beer();
         }
 
         return  null;

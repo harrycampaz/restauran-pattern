@@ -12,6 +12,6 @@ public class Jamon implements Relleno {
 
     @Override
     public String calories() {
-        return " : 56 kcal";
+        return ": 56 kcal";
     }
 }

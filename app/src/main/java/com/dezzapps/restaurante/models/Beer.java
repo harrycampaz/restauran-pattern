@@ -2,14 +2,14 @@ package com.dezzapps.restaurante.models;
 
 import com.dezzapps.restaurante.models.interfaces.Drink;
 
-public class Coke implements Drink {
+public class Beer implements Drink {
     @Override
     public String name() {
-        return "Coca Cola";
+        return "Beer";
     }
 
     @Override
     public String calories() {
-        return ": 140 kcal";
+        return ": 100 kcal";
     }
 }

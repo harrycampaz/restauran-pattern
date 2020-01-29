@@ -5,8 +5,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 
+import com.dezzapps.restaurante.factory.AbstractFactory;
 import com.dezzapps.restaurante.factory.BreadFactory;
 import com.dezzapps.restaurante.factory.DrinkFactory;
+import com.dezzapps.restaurante.factory.FactoryGenerator;
 import com.dezzapps.restaurante.factory.RellenoFactory;
 import com.dezzapps.restaurante.models.Queso;
 import com.dezzapps.restaurante.models.interfaces.Bread;
@@ -22,20 +24,22 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        TextView textView = findViewById(R.id.text_view);
+//        TextView textView = findViewById(R.id.text_view);
 
-        BreadFactory breadFactory = new BreadFactory();
+        AbstractFactory rellenofactory = FactoryGenerator.getFactory("REL");
+        Relleno relleno = rellenofactory.getRelleno("QUE");
+
+        AbstractFactory breadFactory = FactoryGenerator.getFactory("BRE");
         Bread bread = breadFactory.getBread("FRA");
 
-        RellenoFactory rellenoFactory =new  RellenoFactory();
+        AbstractFactory drinkFactory = FactoryGenerator.getFactory("DRI");
+        Drink drink = drinkFactory.getDrink("BEE");
 
-        Relleno relleno = rellenoFactory.getRelleno("QUE");
 
-        DrinkFactory drinkFactory = new DrinkFactory();
 
-        Drink drink = drinkFactory.getDrink("COK");
-
-        textView.setText(new StringBuilder()
-        .append(bread.name() +" - "+ relleno.name() +" - "+ drink.name()).toString());
+//        textView.setText(new StringBuilder()
+//        .append(bread.name() + bread.calories() + " / " +
+//                relleno.name() + relleno.calories() + " / " +
+//                drink.name() + drink.calories()).toString());
     }
 }

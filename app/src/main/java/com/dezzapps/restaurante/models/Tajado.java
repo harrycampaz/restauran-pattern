@@ -11,6 +11,6 @@ public class Tajado implements Bread {
 
     @Override
     public String calories() {
-        return " :30 kcal";
+        return ": 30 kcal";
     }
 }

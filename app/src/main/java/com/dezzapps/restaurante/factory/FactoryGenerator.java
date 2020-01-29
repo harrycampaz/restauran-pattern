@@ -15,6 +15,8 @@ public class FactoryGenerator {
             return new BreadFactory();
         }else if(factoryType.equals("REL")){
             return new RellenoFactory();
+        }else if(factoryType.equals("DRI")){
+            return new DrinkFactory();
         }
 
         return  null;

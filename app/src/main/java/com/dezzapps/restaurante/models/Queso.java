@@ -12,6 +12,6 @@ public class Queso implements Relleno {
 
     @Override
     public String calories() {
-        return " : 21 kcal";
+        return ": 21 kcal";
     }
 }
