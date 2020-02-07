@@ -12,4 +12,14 @@ public class Beer implements Drink {
     public String calories() {
         return ": 100 kcal";
     }
+
+    @Override
+    public String description() {
+        return "Bebida refrescante";
+    }
+
+    @Override
+    public String image() {
+        return null;
+    }
 }

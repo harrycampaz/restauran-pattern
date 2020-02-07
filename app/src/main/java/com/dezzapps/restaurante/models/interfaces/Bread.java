@@ -4,4 +4,6 @@ public interface Bread {
 
     String name();
     String calories();
+    String description();
+    String image();
 }

@@ -14,4 +14,14 @@ public class Jamon implements Relleno {
     public String calories() {
         return ": 56 kcal";
     }
+
+    @Override
+    public String description() {
+        return "Relleno de Jamon";
+    }
+
+    @Override
+    public String image() {
+        return null;
+    }
 }

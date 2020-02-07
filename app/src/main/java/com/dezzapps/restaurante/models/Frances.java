@@ -13,4 +13,15 @@ public class Frances implements Bread {
     public String calories() {
         return ": 23 kcal";
     }
+
+    @Override
+    public String description() {
+        return "Pan frances";
+
+    }
+
+    @Override
+    public String image() {
+        return null;
+    }
 }

@@ -14,4 +14,14 @@ public class Queso implements Relleno {
     public String calories() {
         return ": 21 kcal";
     }
+
+    @Override
+    public String description() {
+        return "Relleno de quesos";
+    }
+
+    @Override
+    public String image() {
+        return null;
+    }
 }

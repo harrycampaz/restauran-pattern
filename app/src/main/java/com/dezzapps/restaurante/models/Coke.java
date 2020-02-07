@@ -12,4 +12,14 @@ public class Coke implements Drink {
     public String calories() {
         return ": 140 kcal";
     }
+
+    @Override
+    public String description() {
+        return "Bebida refrescante";
+    }
+
+    @Override
+    public String image() {
+        return null;
+    }
 }

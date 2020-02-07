@@ -26,7 +26,7 @@
             android:id="@+id/card_content"
             layout="@layout/card_content"
             android:layout_width="match_parent"
-            android:layout_height="453dp"
+            android:layout_height="479dp"
             tools:layout_editor_absoluteX="85dp"
             tools:layout_editor_absoluteY="315dp" />
     </androidx.cardview.widget.CardView>
