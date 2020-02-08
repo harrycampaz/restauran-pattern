@@ -1,8 +1,12 @@
 package com.dezzapps.restaurante.models.interfaces;
 
-public interface Relleno {
-    String name();
-    String calories();
-    String description();
-    String image();
+public abstract class Relleno implements Ingredient  {
+    @Override
+    public abstract String name();
+    @Override
+    public abstract int calories();
+    @Override
+    public abstract String description();
+    @Override
+    public abstract String image();
 }

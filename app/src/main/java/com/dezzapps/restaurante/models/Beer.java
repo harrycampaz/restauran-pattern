@@ -9,8 +9,8 @@ public class Beer implements Drink {
     }
 
     @Override
-    public String calories() {
-        return ": 100 kcal";
+    public int calories() {
+        return 100;
     }
 
     @Override
@@ -20,6 +20,6 @@ public class Beer implements Drink {
 
     @Override
     public String image() {
-        return null;
+        return "R.drawable.beer";
     }
 }

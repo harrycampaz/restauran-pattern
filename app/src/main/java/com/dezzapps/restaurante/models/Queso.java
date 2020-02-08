@@ -4,15 +4,15 @@ import com.dezzapps.restaurante.models.interfaces.Relleno;
 
 
 
-public class Queso implements Relleno {
+public class Queso extends Relleno {
     @Override
     public String name() {
         return "Queso";
     }
 
     @Override
-    public String calories() {
-        return ": 21 kcal";
+    public int calories() {
+        return 21;
     }
 
     @Override

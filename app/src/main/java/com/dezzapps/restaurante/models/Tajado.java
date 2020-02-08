@@ -3,15 +3,15 @@ package com.dezzapps.restaurante.models;
 import com.dezzapps.restaurante.models.interfaces.Bread;
 
 
-public class Tajado implements Bread {
+public class Tajado extends Bread {
     @Override
     public String name() {
         return "Tajado";
     }
 
     @Override
-    public String calories() {
-        return ": 30 kcal";
+    public int calories() {
+        return 30;
     }
 
     @Override

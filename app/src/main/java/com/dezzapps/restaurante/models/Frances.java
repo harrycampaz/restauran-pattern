@@ -3,15 +3,15 @@ package com.dezzapps.restaurante.models;
 import com.dezzapps.restaurante.models.interfaces.Bread;
 
 
-public class Frances implements Bread {
+public class Frances extends Bread {
     @Override
     public String name() {
         return "Frances";
     }
 
     @Override
-    public String calories() {
-        return ": 23 kcal";
+    public int calories() {
+        return 23;
     }
 
     @Override
@@ -22,6 +22,6 @@ public class Frances implements Bread {
 
     @Override
     public String image() {
-        return null;
+        return "R.drawable.sliced";
     }
 }

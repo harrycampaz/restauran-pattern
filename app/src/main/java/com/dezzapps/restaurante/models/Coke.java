@@ -9,8 +9,8 @@ public class Coke implements Drink {
     }
 
     @Override
-    public String calories() {
-        return ": 140 kcal";
+    public int calories() {
+        return 140;
     }
 
     @Override
@@ -20,6 +20,6 @@ public class Coke implements Drink {
 
     @Override
     public String image() {
-        return null;
+        return "R.drawable.coke";
     }
 }

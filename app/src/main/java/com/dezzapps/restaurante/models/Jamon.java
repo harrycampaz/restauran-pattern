@@ -4,15 +4,15 @@ import com.dezzapps.restaurante.models.interfaces.Relleno;
 
 
 
-public class Jamon implements Relleno {
+public class Jamon extends Relleno {
     @Override
     public String name() {
         return "Jamon";
     }
 
     @Override
-    public String calories() {
-        return ": 56 kcal";
+    public int calories() {
+        return 54;
     }
 
     @Override
@@ -22,6 +22,6 @@ public class Jamon implements Relleno {
 
     @Override
     public String image() {
-        return null;
+        return "R.drawable.ham";
     }
 }

@@ -1,9 +1,13 @@
 package com.dezzapps.restaurante.models.interfaces;
 
-public interface Bread {
+public abstract class Bread implements Ingredient {
 
-    String name();
-    String calories();
-    String description();
-    String image();
+    @Override
+    public abstract String name();
+    @Override
+    public abstract int calories();
+    @Override
+    public abstract String description();
+    @Override
+    public abstract String image();
 }
