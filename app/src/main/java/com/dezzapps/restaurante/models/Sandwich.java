@@ -31,7 +31,7 @@ public class Sandwich {
         return ingredients;
     }
 
-    public void getIngredienst(){
+    public void getIngredientsprin(){
         for (Ingredient i: ingredients){
             Log.i(TAG, i.name() +" : " +i.calories()+" kcal");
         }
