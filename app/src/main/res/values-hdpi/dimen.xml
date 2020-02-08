@@ -9,4 +9,6 @@
 
     <dimen name="activity_horizontal">0dp</dimen>
     <dimen name="activity_vertical">0dp</dimen>
+
+    <dimen name="navDrawer_header_height">170dp</dimen>
 </resources>
