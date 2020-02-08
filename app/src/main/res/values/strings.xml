@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">Restaurante</string>
+    <string name="setting">Setting</string>
+    <string name="search">Search</string>
     <string name="filling">Tomate</string>
     <string name="filling_desc">Tomates frescos del mediterraneo</string>
     <string name="calories">30 calorías</string>
