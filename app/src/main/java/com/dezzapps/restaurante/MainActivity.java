@@ -5,6 +5,7 @@ import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
 import android.util.Log;
@@ -75,7 +76,10 @@ public class MainActivity extends AppCompatActivity {
 
                 switch (menuItem.getItemId()){
                     case R.id.drama:
-                        Log.d(TAG, "onNavigationItemSelected: Drama");
+                      ContentFragment fragment = new ContentFragment();
+                        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+                        transaction.replace(R.id.fragment, fragment);
+                        transaction.commit();
                         return  true;
 
                     case R.id.comedia:
@@ -86,8 +90,6 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.terror:
                         Log.d(TAG, "onNavigationItemSelected: Terror");
                         return  true;
-
-
 
                         default:
                             return false;
