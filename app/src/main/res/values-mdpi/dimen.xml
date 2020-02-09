@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <dimen name="card_height">200dp</dimen>
+    <dimen name="card_corner_radius">5dp</dimen>
+    <dimen name="card_elevation">2dp</dimen>
+    <dimen name="text_padding_start">24dp</dimen>
+
+
+    <dimen name="activity_horizontal">0dp</dimen>
+    <dimen name="activity_vertical">0dp</dimen>
+
+    <dimen name="navDrawer_header_height">170dp</dimen>
+</resources>

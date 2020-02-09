@@ -7,4 +7,10 @@
     <string name="calories">30 calorías</string>
     <string name="add">Añadir</string>
     <string name="alt_text">Una imagen de tomates frescos</string>
+    <string name="feature">Feature</string>
+    <string name="comedia">Comedia</string>
+    <string name="terror">Terror</string>
+    <string name="drama">Drama</string>
+    <string name="openDrawer">Open</string>
+    <string name="closeDrawer">Close</string>
 </resources>
