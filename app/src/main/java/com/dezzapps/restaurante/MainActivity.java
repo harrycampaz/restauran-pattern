@@ -27,6 +27,7 @@ import com.dezzapps.restaurante.models.Jamon;
 import com.dezzapps.restaurante.models.Queso;
 import com.dezzapps.restaurante.models.QuesoGratidando;
 import com.dezzapps.restaurante.models.Sandwich;
+import com.dezzapps.restaurante.models.User;
 import com.dezzapps.restaurante.models.interfaces.Bread;
 import com.dezzapps.restaurante.models.interfaces.Drink;
 import com.dezzapps.restaurante.models.interfaces.Relleno;
@@ -53,12 +54,22 @@ public class MainActivity extends AppCompatActivity {
             public void onDrawerOpened(View drawerView) {
                 super.onDrawerOpened(drawerView);
                 Log.d(TAG, "onDrawerOpened: Si");
+
+                User user = User.getUser();
+
+                user.setName("Tomas");
+
+                Log.d(TAG, "onDrawerOpened: "+ user.getName());
+
             }
 
             @Override
             public void onDrawerClosed(View drawerView) {
                 super.onDrawerClosed(drawerView);
                 Log.d(TAG, "onDrawerClosed: ");
+                User user = User.getUser();
+
+                Log.d(TAG, "onDrawerOpened: "+ user.getName());
             }
 
         };
